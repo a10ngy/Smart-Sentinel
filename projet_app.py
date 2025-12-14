@@ -17,21 +17,21 @@ from email.mime.text import MIMEText
 st.set_page_config(page_title="Smart Sentinel", layout="wide")
 
 # URL de base Firebase (sans .json à la fin)
-FIREBASE_BASE_URL = "https://gng1503projet-default-rtdb.firebaseio.com"
+FIREBASE_BASE_URL = st.secrets["FIREBASE_BASE_URL"]
 
 # ------------------------------------------------------------
 # CONFIG EMAIL (Gmail + mot de passe d’application)
 # ------------------------------------------------------------
-EMAIL_SENDER = "angeyvanmugisha@gmail.com"
+EMAIL_SENDER = st.secrets["EMAIL_SENDER"]
 
-EMAIL_PASSWORD = "wpzydztrfyaktcul"
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 
-EMAIL_RECIPIENT = "angeyvanmugisha@gmail.com"
+EMAIL_RECIPIENT = st.secrets["EMAIL_RECIPIENT"]
 
 # ------------------------------------------------------------
 # AUTHENTIFICATION SIMPLE (ADMIN)
 # ------------------------------------------------------------
-ADMIN_PASSWORD = "admin123"
+ADMIN_PASSWORD = st.secrets["ADMIN_PASSWORD"]
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
