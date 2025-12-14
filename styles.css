@@ -1,0 +1,93 @@
+/* Import Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+/* ---------------------------------------------------------
+   GLOBAL
+--------------------------------------------------------- */
+html, body, [class*="css"] {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;          /* Ultra light */
+    color: inherit !important;
+}
+
+/* Supprime TOUT le gras globalement */
+h1, h2, h3, h4, h5, h6,
+label, .stMetric, .stButton>button {
+    font-weight: 300 !important;
+}
+
+/* ---------------------------------------------------------
+   TITRES PERSONNALISÉS
+--------------------------------------------------------- */
+.title {
+    font-size: 48px;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------
+   MODE SOMBRE
+--------------------------------------------------------- */
+.dark-theme {
+    background-color: #0d1117 !important;
+    color: #e5e5e5 !important;
+}
+
+/* ---------------------------------------------------------
+   MODE CLAIR
+--------------------------------------------------------- */
+.light-theme {
+    background-color: #f6f7fb !important;
+    color: #2c2c2c !important;
+}
+
+/* ---------------------------------------------------------
+   TABS (MENU PRINCIPAL)
+--------------------------------------------------------- */
+
+/* ---- Mode sombre (lisibilité) ---- */
+.dark-theme .stTabs [data-baseweb="tab"] {
+    color: #dfe3eb !important;
+}
+.dark-theme .stTabs [aria-selected="true"] {
+    color: #5a8cff !important;
+    border-bottom: 2px solid #5a8cff !important;
+}
+
+/* ---- Mode clair (correction visibilité) ---- */
+.light-theme .stTabs [data-baseweb="tab"] {
+    color: #2c2c2c !important;          /* Texte visible */
+}
+.light-theme .stTabs [aria-selected="true"] {
+    color: #3d6ae0 !important;          /* Bleu lisible */
+    border-bottom: 2px solid #3d6ae0 !important;
+}
+.light-theme .stTabs [data-baseweb="tab"]:hover {
+    color: #1a1a1a !important;
+}
+
+/* ---------------------------------------------------------
+   INPUTS
+--------------------------------------------------------- */
+.stTextInput>div>div>input,
+.stTextArea>div>textarea {
+    border-radius: 8px !important;
+    font-weight: 300 !important;
+}
+
+/* ---------------------------------------------------------
+   SLIDERS
+--------------------------------------------------------- */
+.stSlider > div > div > div {
+    background: #3d6ae0 !important;
+}
+
+/* ---------------------------------------------------------
+   CARDS & BLOCS
+--------------------------------------------------------- */
+.block-container {
+    padding-top: 2rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
